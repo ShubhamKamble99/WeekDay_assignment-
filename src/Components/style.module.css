@@ -1,0 +1,168 @@
+.jobCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.5rem;
+  display: grid;
+  row-gap: 0.7rem;
+}
+.jobpostDate {
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  width: max-content;
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  align-items: center;
+}
+.CompanyInfo {
+  display: grid;
+  row-gap: 3px;
+}
+.CompanyInfo .companyName {
+  color: #8b8b8b;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+.CompanyInfo .JobRole {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.CompanyInfo .JobLocation {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.JobBudget {
+  color: #4c5969;
+  font-weight: 500;
+}
+.AboutCompnaySection {
+  height: 250px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+.AboutCompnaySection .title {
+  font-weight: 500;
+  color: #000;
+}
+.viewJobSection {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+}
+.ExperienceSection {
+  padding-top: 1rem;
+}
+.ExperienceTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+}
+.jobBtns {
+  display: grid;
+  gap: 1rem;
+}
+.jobBtns .EasyApply {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgb(85, 239, 196);
+  color: #000;
+  font-weight: 500;
+  padding: 8px 18px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.jobBtns .Referral {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  background-color: #4943da;
+  color: #fff;
+  font-weight: normal;
+  padding: 8px 18px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ReferralImg {
+  display: flex;
+  position: relative;
+}
+.ReferralImg .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background: green;
+  position: absolute;
+  /* right: 6px; */
+  float: right;
+  bottom: 2px;
+  z-index: 2;
+}
+.ReferralImg img {
+  border-radius: 50%;
+  margin: 0 4px;
+  /* mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  ); */
+  filter: blur(3px);
+}
+
+/* For JobDetailsPopup */
+.JobDetailsPopup {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* color: #fff; */
+  font-weight: 600;
+  font-size: 1.8rem;
+  width: 100%;
+  flex-shrink: 0;
+}
+.JDDetails {
+  padding: 1.4rem 1rem;
+  
+}
+.JobDetailsPopup h5 {
+  text-align: center;
+}
+.JobDetailsPopup .AboutCompnaySection {
+  height: 400px;
+  overflow: auto;
+  overflow-x: hidden;
+  mask-image: unset;
+  display: grid;
+  row-gap: 1rem;
+  /* padding-top: 1rem; */
+  padding: 1rem;
+}
+.JobDetailsPopup .title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.JobDetailsPopup .jobDescription {
+  font-weight: 400;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,29 @@
+.DataSearchSection {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0px;
+}
+.JobCardSection {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 6rem;
+  grid-row-gap: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .JobCardSection {
+    grid-template-columns: auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .DataSearchSection {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
